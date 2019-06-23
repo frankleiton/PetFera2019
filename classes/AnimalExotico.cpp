@@ -8,14 +8,9 @@ class AnimalExotico: AnimalSilvestre
 private:
     string pais_origem;
 public:
-    AnimalExotico(/* args */);
+    AnimalExotico(string pais_origem, string autorizacao_ibama): AnimalSilvestre( autorizacao_ibama )
+    {
+        this->pais_origem = pais_origem;
+    }
     ~AnimalExotico();
 };
-
-AnimalExotico::AnimalExotico(/* args */)
-{
-}
-
-AnimalExotico::~AnimalExotico()
-{
-}

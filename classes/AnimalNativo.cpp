@@ -9,14 +9,12 @@ private:
     string uf_origem;
     string autorizacao;
 public:
-    AnimalNativo(/* args */);
+    AnimalNativo(string uf_origem, string autorizacao, string autorizacao_ibama): AnimalSilvestre( autorizacao_ibama )
+    {
+        this->autorizacao = autorizacao;
+        this->uf_origem = uf_origem;
+    }
+
     ~AnimalNativo();
 };
 
-AnimalNativo::AnimalNativo(/* args */)
-{
-}
-
-AnimalNativo::~AnimalNativo()
-{
-}

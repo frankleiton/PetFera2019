@@ -5,16 +5,11 @@ using namespace std;
 class AnimalSilvestre
 {
 private:
-    string autorizado_ibama;
+    string autorizacao_ibama;
 public:
-    AnimalSilvestre(/* args */);
+    AnimalSilvestre(string autorizacao_ibama)
+    {
+        this->autorizacao_ibama = autorizacao_ibama;
+    }
     ~AnimalSilvestre();
 };
-
-AnimalSilvestre::AnimalSilvestre(/* args */)
-{
-}
-
-AnimalSilvestre::~AnimalSilvestre()
-{
-}

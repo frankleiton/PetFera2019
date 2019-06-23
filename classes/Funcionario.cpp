@@ -14,6 +14,8 @@ protected:
     string especialidade;
 
 public:
+    int numerro;
+    Funcionario();
     Funcionario(int id, string nome, string cpf, short idade, short tipo_sanguineo, char fator_rh, string especialidade);
     ~Funcionario();
 };
@@ -27,6 +29,11 @@ Funcionario::Funcionario(int id, string nome, string cpf, short idade, short tip
     this->tipo_sanguineo = tipo_sanguineo;
     this->fator_rh = fator_rh;
     this->especialidade = especialidade;
+}
+
+Funcionario::Funcionario()
+{
+    
 }
 
 Funcionario::~Funcionario()
