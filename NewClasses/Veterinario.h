@@ -1,14 +1,15 @@
 #ifndef VETERINARIO_H
 #define VETERINARIO_H
 
-#include <iostream>
-#include "Funcionario.hpp"
-
 using namespace std;
+
+#include <iostream>
+#include <string>
+#include "Funcionario.h"
 
 class Veterinario : public Funcionario
 {
-private:
+protected:
     string cmv;
 public:
     Veterinario();

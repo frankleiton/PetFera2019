@@ -1,4 +1,6 @@
+#include <iostream>
 #include <ctime>
+#include <string>
 #include "Animal.cpp"
 
 class Anfibio: public Animal

@@ -1,6 +1,4 @@
-#include <iostream>
-
-#include "Veterinario.hpp"
+#include "Veterinario.h"
 
 using namespace std;
 
@@ -12,6 +10,3 @@ Veterinario::Veterinario(string cmv, int id, string nome, string cpf, short idad
 }
 
 Veterinario::~Veterinario(){}
-
-
-

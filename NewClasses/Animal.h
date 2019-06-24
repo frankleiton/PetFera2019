@@ -1,15 +1,17 @@
 #ifndef ANIMAL_H
 #define ANIMAL_H
 
-#include <iostream>
-#include "Veterinario.hpp"
-#include "Tratador.hpp"
-
 using namespace std;
+
+#include <iostream>
+#include <string>
+
+#include "Veterinario.h"
+#include "Tratador.h"
 
 class Animal
 {
-private:
+protected:
     int id;
     string classe;
     string nome_cientifico;

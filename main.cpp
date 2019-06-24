@@ -1,6 +1,5 @@
-#include <stdio.h>
+#include <iostream>
 #include "classes/Tratador.cpp"
-#include "classes/Mamifero.cpp"
 
 using namespace std;
 

@@ -1,14 +1,5 @@
 #include <iostream>
-#include <map>
-
-#include "../classes/Funcionario.cpp"
-#include "../classes/Tratador.cpp"
-#include "../classes/Veterinario.cpp"
-#include "../classes/Animal.cpp"
-#include "../classes/Mamifero.cpp"
-#include "../classes/MamiferoExotico.cpp"
-
-
+#include <list>
 
 using namespace std;
 

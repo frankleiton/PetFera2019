@@ -1,6 +1,12 @@
 #ifndef TRATADOR_H
 #define TRATADOR_H
 
+#include <iostream>
+#include "Funcionario.h"
+#include <string>
+
+using namespace std;
+
 class Tratador : public Funcionario
 {
 protected:

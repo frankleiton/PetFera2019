@@ -1,7 +1,5 @@
-#include <iostream>
 #include <string>
-#include "Tratador.hpp"
-#include "Funcionario.hpp"
+#include "Tratador.h"
 
 using namespace std;
 
@@ -11,4 +9,5 @@ Tratador::Tratador(int nivel_de_seguranca, int id, string nome, string cpf, shor
 {
     this->nivel_de_seguranca = nivel_de_seguranca;
 }
+
 Tratador::~Tratador(){}
