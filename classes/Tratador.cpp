@@ -2,7 +2,7 @@
 
 class Tratador : public Funcionario
 {
-private:
+protected:
     int nivel_de_segurança;
 public:
     Tratador();
