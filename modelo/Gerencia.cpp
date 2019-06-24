@@ -52,7 +52,28 @@ public:
         map<int, Animal>::iterator it;
 
         for (it = animais.begin(); it != animais.end(); ++it) 
-            cout << "ID: " << it->first << " | Nome: " << it->second->getID() << endl;        
+            cout << "ID: " << it->first << " | Nome: " << it->second.getID() << endl;        
+    }
+
+    void Consultar_Animal(int id, string classe = "padrao")
+    {
+        Animal animal;
+        map<int, Animal>::iterator it;
+
+        if (classe == "padrao")
+        {
+            it = animais.find(id);
+
+            if (it.operator!=)
+            {
+                cout << "Animal Encontrado";
+            }else
+            {
+                cout << "Animal Não Encontrado";
+            }
+            
+        }
+        
     }
 
 

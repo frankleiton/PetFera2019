@@ -1,40 +1,5 @@
 #include <iostream>
-
-using namespace std;
-
-class Funcionario
-{
-protected:
-    int id;
-    string nome;
-    string cpf;
-    short idade;
-    short tipo_sanguineo;
-    char fator_rh;
-    string especialidade;
-
-public:
-    Funcionario();
-    Funcionario(int id, string nome, string cpf, short idade, short tipo_sanguineo, char fator_rh, string especialidade);
-    ~Funcionario();
-
-    int getID()
-    {
-        return this->id;
-    }
-
-    string getNome()
-    {
-        return this->nome;
-    }
-
-    string getCpf()
-    {
-        return this->cpf;
-    }
-
-
-};
+#include "Funcionario.h"
 
 Funcionario::Funcionario(int id, string nome, string cpf, short idade, short tipo_sanguineo, char fator_rh, string especialidade)
 {
@@ -47,6 +12,20 @@ Funcionario::Funcionario(int id, string nome, string cpf, short idade, short tip
     this->especialidade = especialidade;
 }
 
+int Funcionario::getID()
+{
+    return this->id;
+}
+
+string Funcionario::getNome()
+{
+    return this->nome;
+}
+
+string Funcionario::getCpf()
+{
+    return this->cpf;
+}
 
 
 Funcionario::Funcionario()
