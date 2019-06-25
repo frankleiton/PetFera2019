@@ -1,73 +1,113 @@
-#include <iostream>
-#include <list>
+#include "Gerencia.h"
 
-using namespace std;
-
-class Gerencia
+bool Gerencia::CadastrarTratador(Tratador *tratador)
 {
-public:
+    funcionarios.push_back(tratador);
+}
 
-    //Atributos para GERENCIAR do PETSHOP
-    //EX: MAP de Funcionarios, MAP de Animais ...
-    //...........................................
-    map<int, Veterinario> veterinarios;
-    map<int, Tratador> tratadores;
-    map<int, Animal> animais;
+bool Gerencia::CadastrarVeterinario(Veterinario *veterinario)
+{
+    funcionarios.push_back(veterinario);
+}
 
+bool Gerencia::CadastrarAnimal(Animal *animal)
+{
+    animais.push_back(animal);
+}
 
-    //Funções para gerencia do PETSHOP
-    //...........................................
+bool Gerencia::venderAnimal(list<Animal>::iterator animal)
+{
+    //animais.erase(*animal);
+}
 
-    bool CadastrarTratador(Tratador tratador)
+void Gerencia::listarAnimais()
+{
+    list<Funcionario*>::iterator it;
+    for (it = funcionarios.begin(); it != funcionarios.end(); ++it)
     {
-        tratadores.insert(pair<int, Tratador>(tratador.getID(), tratador));
-    }
+        Tratador* animal = dynamic_cast<Tratador*>(*it);
+    }  
+}
 
-    bool CadastrarVeterinario(Veterinario veterinario)
+void Gerencia::Consultar_Animal_id(int id)
+{ 
+    bool encontrado = false;
+
+    list<Animal*>::iterator it;
+    for (it = animais.begin(); it != animais.end(); ++it)
     {
-        veterinarios.insert(pair<int, Veterinario>(veterinario.getID() ,veterinario));
-    }
-
-    bool CadastrarAnimal(Animal animal)
-    {
-        animais.insert(pair<int, Animal>(animal.getID(), animal));
-    }
-
-    bool venderAnimal(int id)
-    {
-        animais.erase(id);
-    }
-
-    void listarAnimais()
-    {
-        map<int, Animal>::iterator it;
-
-        for (it = animais.begin(); it != animais.end(); ++it) 
-            cout << "ID: " << it->first << " | Nome: " << it->second.getID() << endl;        
-    }
-
-    void Consultar_Animal(int id, string classe = "padrao")
-    {
-        Animal animal;
-        map<int, Animal>::iterator it;
-
-        if (classe == "padrao")
+        Animal* animal = dynamic_cast<Animal*>(*it);
+        if (animal->getID() == id)
         {
-            it = animais.find(id);
+            encontrado = true;
+            cout << "Animal Encontrado | Nome: " << animal->getNome_cientifico() << endl;
+            return;
+        }
+    }  
 
-            if (it.operator!=)
-            {
-                cout << "Animal Encontrado";
-            }else
-            {
-                cout << "Animal Não Encontrado";
-            }
-            
+    if (!encontrado)
+    {
+        cout << "Animal nao Encontrado" << endl;
+        return;
+    }
+    
+    
+}
+
+void Gerencia::Consultar_Animal_Classe(string classe)
+{
+    list<Animal*>::iterator it;
+    for (it = animais.begin(); it != animais.end(); ++it)
+    {
+        if (classe == "mamifero")
+        {
+            Mamifero* mamifero = dynamic_cast<Mamifero*>(*it);
+            cout << "ID: " << mamifero->getID() << "Nome: " << mamifero->getNome_cientifico();
+        }
+
+        if (classe == "ave")
+        {
+            Ave* ave = dynamic_cast<Ave*>(*it);
+            cout << "ID: " << ave->getID() << "Nome: " << ave->getNome_cientifico();
+        }
+
+        if (classe == "reptil")
+        {
+            Reptil* reptil = dynamic_cast<Reptil*>(*it);
+            cout << "ID: " << reptil->getID() << "Nome: " << reptil->getNome_cientifico();
+        }
+
+        if (classe == "anfibio")
+        {
+            Anfibio* anfibio = dynamic_cast<Anfibio*>(*it);
+            cout << "ID: " << anfibio->getID() << "Nome: " << anfibio->getNome_cientifico();
+        }
+    }  
+}
+
+void Gerencia::Consultar_Animal_Veterinario(Veterinario veterinario)
+{
+    list<Animal*>::iterator it;
+    for (it = animais.begin(); it != animais.end(); ++it)
+    {
+        Animal* animal = dynamic_cast<Animal*>(*it);
+        if (animal->getVeterinario().getID() == veterinario.getID())
+        {
+            cout << "Animal sobre os cuidados desse veterinario: " << animal->getNome_cientifico();
         }
         
-    }
+    }  
+}
 
-
-    Gerencia();
-    ~Gerencia();
-};
+void Gerencia::Consultar_Animal_Tratador(Tratador tratador)
+{
+    list<Animal*>::iterator it;
+    for (it = animais.begin(); it != animais.end(); ++it)
+    {
+        Animal* animal = dynamic_cast<Animal*>(*it);
+        if (animal->getTratador().getID() == tratador.getID())
+        {
+            cout << "Animal sobre os cuidados desse tratador: " << animal->getNome_cientifico();
+        }
+    }  
+}
