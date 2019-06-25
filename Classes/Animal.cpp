@@ -39,8 +39,3 @@ Tratador Animal::getTratador()
 {
     return this->tratador;
 }
-
-Animal::~Animal()
-{
-
-}
