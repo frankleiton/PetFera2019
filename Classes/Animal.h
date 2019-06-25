@@ -30,7 +30,7 @@ public:
     Veterinario getVeterinario();
     Tratador getTratador();
 
-    ~Animal();
+    virtual ~Animal(){}
 
 };
 
