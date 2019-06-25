@@ -1,4 +1,7 @@
-#include <stdio.h>
+#include <iostream>
+#include "modelo/Gerencia.h"
+
+using namespace std;
 
 int main(int argc, char const *argv[])
 {
