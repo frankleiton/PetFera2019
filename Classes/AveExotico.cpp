@@ -4,3 +4,8 @@ AveExotico::AveExotico(string pais_origem, string autorizacao_ibama, double tama
 {
         
 }
+
+AveExotico::~AveExotico()
+{
+    
+}

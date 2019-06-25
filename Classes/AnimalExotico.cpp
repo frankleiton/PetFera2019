@@ -4,3 +4,5 @@ AnimalExotico::AnimalExotico(string pais_origem, string autorizacao_ibama): Anim
 {
     this->pais_origem = pais_origem;
 }
+
+AnimalExotico::~AnimalExotico(){}

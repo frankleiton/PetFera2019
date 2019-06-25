@@ -4,3 +4,8 @@ MamiferoExotico::MamiferoExotico(string pais_origem, string autorizacao_ibama, s
 {
 
 }
+
+MamiferoExotico::~MamiferoExotico()
+{
+    
+}

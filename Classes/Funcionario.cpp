@@ -31,3 +31,13 @@ Funcionario::Funcionario()
 {
     
 }
+
+Funcionario::~Funcionario()
+{
+
+}
+
+void Funcionario::coisar()
+{
+    cout << "oi";
+}

@@ -2,7 +2,7 @@
 
 //funções padrões das tabelas
 repository::repository(){
-    rc = sqlite3_open("PetFeira.db", &db);
+    rc = sqlite3_open("PetFera.db", &db);
    if( rc ) {
     cout<<"Can't open database: "<< sqlite3_errmsg(db)<< endl;
    } else {
@@ -23,7 +23,6 @@ int repository::callback(void *NotUsed, int argc, char **argv, char **azColName)
 void repository::runSql (){
 rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
    if( rc != SQLITE_OK ){
-    //   fprintf(stderr, "SQL error: %s\n", zErrMsg);
       cout<< "SQL error: "<< zErrMsg<<endl;
       sqlite3_free(zErrMsg);
    } 
@@ -31,7 +30,6 @@ rc = sqlite3_exec(db, sql, callback, 0, &zErrMsg);
 void repository::runSql(const char * code){
     rc = sqlite3_exec(db, code, callback, 0, &zErrMsg);
    if( rc != SQLITE_OK ){
-    //   fprintf(stderr, "SQL error: %s\n", zErrMsg);
       cout<< "SQL error: "<< zErrMsg<<endl;
       sqlite3_free(zErrMsg);
    }
@@ -78,8 +76,8 @@ void repository::creat_table(){
       runSql();
 
 }
-//Funçôes para tabela animal
 
+//Funçôes para tabela animal
 void repository::insert_table_animal(string classe,string nome_animal,string nome_cientifico,char sexo,string tamanho,string dieta,string veterinario,string tratador,string nome){
     string aux = "INSERT INTO ANIMAL (CLASSE,NOME_ANIMAL,NOME_CIENTIFICO,SEXO,TAMANHO,DIETA,VETERINARIO,TRATADOR,NOME_DE_BATISMO) " ;
     aux += "VALUES ( '"+classe+"','"+nome_animal+"', '"+nome_cientifico+"','"+sexo+"',"+tamanho+",'"+dieta+"',"+veterinario+","+tratador+",'"+nome+"' ); ";
@@ -98,6 +96,7 @@ void repository::select_table_animal_id(string id){
     string aux = "SELECT * from ANIMAL where ID="+id+";";
     runSql(aux.c_str());
 }
+
 //funções do funcionario
 void repository::insert_table_funcionario(string funcao,string nome, string cpf,string idade,string sangue,string rh,string especialidade, string crmv,string seguranca ){
     string aux = "INSERT INTO FUNCIONARIO (FUNCAO,NOME,CPF,IDADE,TIPO_SANGUINEO,FATOR_RH,ESPECIALIDADE,CRMV,NIVEL_DE_SEGURANCA) " ;

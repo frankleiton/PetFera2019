@@ -4,3 +4,8 @@ ReptilExotico::ReptilExotico(string pais_origem, string autorizacao_ibama, bool 
 {
 
 }
+
+ReptilExotico::~ReptilExotico()
+{
+    
+}

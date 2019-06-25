@@ -4,3 +4,8 @@ MamiferoNativo::MamiferoNativo(string uf_origem, string autorizacao, string auto
 {
 
 }
+
+MamiferoNativo::~MamiferoNativo()
+{
+    
+}

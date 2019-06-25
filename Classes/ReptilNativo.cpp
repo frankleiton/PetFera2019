@@ -4,3 +4,8 @@ ReptilNativo::ReptilNativo(string uf_origem, string autorizacao, string autoriza
 {
 
 }
+
+ReptilNativo::~ReptilNativo()
+{
+    
+}

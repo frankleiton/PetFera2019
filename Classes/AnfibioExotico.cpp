@@ -4,3 +4,5 @@ AnfibioExotico::AnfibioExotico(std::string pais_origem, std::string autorizacao_
 {
 
 }
+
+AnfibioExotico::~AnfibioExotico(){}

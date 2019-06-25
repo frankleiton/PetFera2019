@@ -5,12 +5,12 @@
 #include <list>
 #include <string>
 
-#include "../Classes/Animal.h"
-#include "../Classes/Funcionario.h"
-#include "../Classes/Mamifero.h"
-#include "../Classes/Reptil.h"
-#include "../Classes/Anfibio.h"
-#include "../Classes/Ave.h"
+#include "../classes/Animal.h"
+#include "../classes/Funcionario.h"
+#include "../classes/Mamifero.h"
+#include "../classes/Reptil.h"
+#include "../classes/Anfibio.h"
+#include "../classes/Ave.h"
 
 using namespace std;
 

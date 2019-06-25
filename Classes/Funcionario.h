@@ -20,7 +20,9 @@ protected:
 public:
     Funcionario();
     Funcionario(int id, string nome, string cpf, short idade, short tipo_sanguineo, char fator_rh, string especialidade);
-    virtual ~Funcionario() {};
+    ~Funcionario();
+
+    virtual void coisar();
 
     int getID();
     string getNome();

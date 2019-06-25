@@ -4,3 +4,5 @@ AnfibioNativo::AnfibioNativo(string uf_origem, string autorizacao, string autori
 {
 
 }
+
+AnfibioNativo::~AnfibioNativo(){}

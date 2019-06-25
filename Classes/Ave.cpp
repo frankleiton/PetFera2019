@@ -7,3 +7,8 @@ Ave::Ave(double tamanho_do_bico_cm, double envergadura_das_asas, int id, string 
 }
 
 Ave::~Ave(){}
+
+void Ave::coisando()
+{
+    cout << "oi";
+}

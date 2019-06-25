@@ -4,9 +4,6 @@
 #include <iostream>
 #include <string>
 
-#include "Animal.h"
-#include <string>
-
 using namespace std;
 
 class AnimalSilvestre
@@ -16,6 +13,7 @@ private:
 public:
     AnimalSilvestre(string autorizacao_ibama);
     ~AnimalSilvestre();
+
 };
 
 #endif

@@ -7,6 +7,16 @@ Animal::Animal()
     
 }
 
+Animal::~Animal()
+{
+
+}
+
+void Animal::coisar()
+{
+    cout << "oi";
+}
+
 Animal::Animal(int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta, Veterinario veterinario, Tratador tratador, string nome_batismo)
 {
     this->id = id;

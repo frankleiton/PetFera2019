@@ -25,3 +25,5 @@ time_t Anfibio:: getUltimaMuda()
 {  
     return this->ultima_muda;
 }
+
+Anfibio::~Anfibio(){}

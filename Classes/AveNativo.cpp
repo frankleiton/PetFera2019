@@ -4,3 +4,8 @@ AveNativo::AveNativo(string uf_origem, string autorizacao, string autorizacao_ib
 {
 
 }
+
+AveNativo::~AveNativo()
+{
+    
+}

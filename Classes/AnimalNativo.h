@@ -2,7 +2,6 @@
 #define ANIMALNATIVO_H
 
 #include <iostream>
-#include <string>
 
 #include "AnimalSilvestre.h"
 #include <string>

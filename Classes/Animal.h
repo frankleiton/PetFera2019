@@ -25,12 +25,14 @@ protected:
 public:
     Animal();
     Animal(int id, string classe, string nome_cientifico, char sexo, double tamanho, string dieta, Veterinario veterinario, Tratador tratador, string nome_batismo);
+    ~Animal();
+
     int getID();
     string getNome_cientifico();    
     Veterinario getVeterinario();
     Tratador getTratador();
 
-    virtual ~Animal(){}
+    virtual void coisar();
 
 };
 
