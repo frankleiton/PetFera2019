@@ -1,8 +1,13 @@
 #ifndef ANFIBIONATIVO_H
 #define ANFIBIONATIVO_H
 
+#include <iostream>
+#include <string>
+
 #include "Anfibio.h"
 #include "AnimalNativo.h"
+
+using namespace std;
 
 class AnfibioNativo : public AnimalNativo, Anfibio
 {

@@ -1,8 +1,13 @@
 #ifndef AVENATIVO_H
 #define AVENATIVO_H
 
+#include <iostream>
+#include <string>
+
 #include "AnimalNativo.h"
 #include "Ave.h"
+
+using namespace std;
 
 class AveNativo: public AnimalNativo, Ave
 {

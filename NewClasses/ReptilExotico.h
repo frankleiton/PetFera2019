@@ -1,8 +1,13 @@
 #ifndef REPTILEXOTICO_H
 #define REPTILEXOTICO_H
 
+#include <iostream>
+#include <string>
+
 #include "AnimalExotico.h"
 #include "Reptil.h"
+
+using namespace std;
 
 class ReptilExotico: public AnimalExotico, Reptil
 {

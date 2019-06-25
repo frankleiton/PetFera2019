@@ -1,8 +1,13 @@
 #ifndef MAMIFEROEXOTICO_H
 #define MAMIFEROEXOTICO_H
 
+#include <iostream>
+#include <string>
+
 #include "AnimalExotico.h"
 #include "Mamifero.h"
+
+using namespace std;
 
 class MamiferoExotico: public AnimalExotico, Mamifero
 {

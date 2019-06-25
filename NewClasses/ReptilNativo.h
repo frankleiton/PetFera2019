@@ -1,8 +1,13 @@
 #ifndef REPTILNATIVO_H
 #define REPTILNATIVO_H
 
+#include <iostream>
+#include <string>
+
 #include "AnimalNativo.h"
 #include "Reptil.h"
+
+using namespace std;
 
 class ReptilNativo: public AnimalNativo, Reptil
 {

@@ -1,8 +1,13 @@
 #ifndef ANIMALEXOTICO_H
 #define ANIMALEXOTICO_H
 
+#include <iostream>
+#include <string>
+
 #include "AnimalSilvestre.h"
 #include <string>
+
+using namespace std;
 
 class AnimalExotico : AnimalSilvestre
 {

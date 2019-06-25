@@ -1,8 +1,13 @@
 #ifndef AVEEXOTICO_H
 #define AVEEXOTICO_H
 
+#include <iostream>
+#include <string>
+
 #include "AnimalExotico.h"
 #include "Ave.h"
+
+using namespace std;
 
 class AveExotico: public AnimalExotico, Ave
 {
