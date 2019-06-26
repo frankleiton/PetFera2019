@@ -1,0 +1,1 @@
+g++ main.cpp Repository/Repository.cpp Classes/Animal.cpp Classes/Funcionario.cpp modelo/Gerencia.cpp -l sqlite3 -o teste
