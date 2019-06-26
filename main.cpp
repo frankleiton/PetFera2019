@@ -1,3 +1,15 @@
+/**
+ * @file main.cpp
+ * @author Frankleiton Levy (frankleiton@gmail.com), Giovanna Karla (macedo1999.gk@gmail.com), Pedro Cardoso Carvalho (carvalho.pedro.cardoso@gmail.com)
+ * @brief  PetFera2019
+ * @version 2.3
+ * @since 2019-06-01
+ * @date 2019-06-25
+ * 
+ * @sa Materiais disponiveis no SIGAA da materia de LP-I 2019.1
+ * 
+ */
+
 #include <iostream>
 #include "modelo/Gerencia.h"
 //#include "Repository/Repository.h"

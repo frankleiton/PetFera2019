@@ -5,12 +5,12 @@
 #include <list>
 #include <string>
 
-#include "../classes/Animal.h"
-#include "../classes/Funcionario.h"
-#include "../classes/Mamifero.h"
-#include "../classes/Reptil.h"
-#include "../classes/Anfibio.h"
-#include "../classes/Ave.h"
+#include "../Classes/Animal.h"
+#include "../Classes/Funcionario.h"
+#include "../Classes/Mamifero.h"
+#include "../Classes/Reptil.h"
+#include "../Classes/Anfibio.h"
+#include "../Classes/Ave.h"
 
 using namespace std;
 
@@ -18,15 +18,18 @@ class Gerencia
 {
 public:
 
-    //Atributos para GERENCIAR do PETSHOP
-    //EX: MAP de Funcionarios, MAP de Animais ...
-    //...........................................
+    /**
+     * @brief Atributos para GERENCIAR do PETSHOP
+     * 
+     */
     list<Funcionario*> funcionarios;
     list<Animal*> animais;
 
 
-    //Funções para gerencia do PETSHOP
-    //...........................................
+    /**
+     * @brief Funções para gerencia do PETSHOP 
+     *  
+     */
 
     bool CadastrarTratador(Tratador *tratador);
 
